@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous">
+</head>
+
+<body onload="newsCategoryFind(), allData()">
+    <!-- header section start -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid mx-4">
+                <a class="navbar-brand fs-3" href="#">Daily News</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="get-ul" class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header sectioin end -->
+
+    <!-- main section start -->
+    <main>
+        <!-- warning section start -->
+        <section>
+            <div
+                class="p-3 text-primary-emphasis bg-dark-subtle border border-primary-subtle rounded-3 container my-3">
+                <span id="item-number">26</span> items found for <span id="item-name">All
+                    News</span>
+            </div>
+        </section>
+        <!-- warning section end -->
+
+        <!-- shorting section start -->
+        <section class="container d-flex justify-content-between my-3">
+            <div class="d-flex align-items-center">
+                <p class="w-75 mb-0">Stored By:</p>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary active" aria-current="page"
+                        onclick="fetchTodaysNews()">Todays News</a>
+                    <a href="#" class="btn btn-primary" onclick="fetchTrending()">Trending</a>
+                </div>
+            </div>
+        </section>
+        <!-- shorting section end -->
+
+        <!-- news card section start -->
+        <section id="news-card" class="container">
+
+        </section>
+        <!-- news card section end -->
+
+        <!-- modal section start -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div id="modal-div" class="modal-dialog">
+
+            </div>
+        </div>
+        <!-- modal section end -->
+    </main>
+    <!-- main section end -->
+
+
+    <!-- script section added -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fa7aad7aa2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
